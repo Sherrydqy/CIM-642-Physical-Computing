@@ -58,3 +58,22 @@ if not a PW pin, if you are over a specific value, it's gonna be considered as o
  * map的时候注意range，超出或者变成负数，都可能出现相反的结果
 
 # 2019.02.14
+phototransistor
+photoresistor: no threshold
+![](http://www.rfwireless-world.com/Terminology/Photoresistor-vs-Phototransistor.html)
+
+### Whenever you are doing something with a sensor, always start with a baseline test to get an idea of what the current environment light/sound/temperature range is
+
+* if you use delay(2000);
+delay will stop the microcontroller for 2 secs, it stops everything. It stops to sense the input as well.
+
+instead, you use millis()
+* println() also slows down the Arduino
+
+# 2019.02.21
+- the maximum of the value the analogWrite() can go is 255
+
+# 2019.02.28
+knock Lock - solution: numberOfKnocks = 0;//add it to the last line
+
+- music fountain, e.g Las Vegas Fountain, there's sensor? / engage and disengage?
