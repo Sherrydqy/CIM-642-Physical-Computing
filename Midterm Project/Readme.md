@@ -29,7 +29,7 @@ The output are two lights. The color, the frequency of lights.
 I needed something that has different attributes to indicate different state of the machine and also communicate a variety of messages to users.
 
 ## CODE
-![Codes are here](./WaterTime.ino)
+[Codes are here](./WaterTime.ino)
 * When a user put a container with water on the shelf, the Arduino starts to read the input of this FSR(Force Sensitive Resistor). Both output for the two lights will be set as HIGH. **flagCup** will change from 0 to 1, indicating a container has been put on the shelf.
 * I set a variable called **stable** to see whether the input is stable or not. Once the flunctuation is less than 4, **stable** increases 1. Once stable reaches the standard that was set for the "stable state", the **flagTimingState** changes from 0 to 1, the machine will store the weight it measures and start timing. The red light will set as LOW.
 * Once the container is lifted up, the input of the FSR will fall under a threshold(**VOL_DIV**) (Here it won't goes drops to 0 because there's voltage on the blue light.) The blue light will be set to blink.
@@ -55,4 +55,4 @@ I needed something that has different attributes to indicate different state of 
 ## FINISHED BREADBOARD
 ![](./breadboard.jpg)
 ## VIDEO
-![WATER TIME!](https://youtu.be/0R5WKP5XWsA)
+[WATER TIME!](https://youtu.be/0R5WKP5XWsA)
