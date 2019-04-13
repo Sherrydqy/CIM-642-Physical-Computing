@@ -77,3 +77,47 @@ instead, you use millis()
 knock Lock - solution: numberOfKnocks = 0;//add it to the last line
 
 - music fountain, e.g Las Vegas Fountain, there's sensor? / engage and disengage?
+
+# 2019.03.28
+
+* HW
+  * Finish the tutorials
+  * design something used that sheet, the one from the top and another one from the bottom.
+  * 3D print it
+
+For 3D printer, you need to measure in MM (millimeters)
+For CLC and the other machine in 1018, you need to measure an object in inches
+
+Inner dimension claws (Top)
+Outer dimension claws (Bottom)
+
+cap for a button
+
+*"3.4, give or take"*
+*tolerance concept*
+
+Solid works (a 3D printer software)
+
+Parametric modeling (参数模型) - one measurement changes, it can automatically adjust the whole model
+
+Top view is used in 3D printing.
+So you should select sketch on the top plane - Because a 3D printer print things from the bottom to the top
+
+constraints = anchor points telling whether they are intersect.
+
+You never want use the exact measurement for 3D printing.
+Because of thermal dynamic extension and stuff,
+You need to add a tolerance
+How do you do that? Set the caliper at the measurement that kind of bigger than the actual size, and put your button, for example, between the claws to see if it fits.
+
+* Cura
+try to print from angles, like you can use gravity towards your favor.
+Profiles: choose 'fast'
+
+**Support:** 如果你要打印一些悬空的东西
+**Build Plate Adhesion:**
+* Build Plate Adhesion Type:
+  * Brim: 四周的
+  * Skirt:
+
+Manage Printer: connect. You can remote print to it if the 3D Printer has a wifi connectivity

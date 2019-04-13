@@ -41,9 +41,10 @@ I needed something that has different attributes to indicate different state of 
 
 
 ## WHAT WORKED AND WHAT NOT WORKED
-
+* What worked: the LED lights. The FSR can measure the force, in some way.
+* What didn't work:  The FSR cannot reach a stable value. The input keeps increasing when something remains still on the shelf. And even if the exactly same thing is put on the shelf, the measurement can be different.
 ## FUTURE IMPROVEMENT PLANS
-
+* Fix the measurement issue. So that I can calculate
 ## Progress
 ![](./progress1.jpg)
 ![](./progress2.jpg)
