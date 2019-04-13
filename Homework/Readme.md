@@ -3,25 +3,26 @@
   ![](./pics/hw1.2.jpg)
   ![](./pics/hw1.1.jpg) <br/>
 ## HW2: Spaceship Interface
-  ![](./pics/hw2.jpg)(<-- two spaces)
-  ![](./pics/hw2.gif)(<-- two spaces)
-  [Code](./codes/Spaceship.ino)<br/>
-## HW3: Userflow (<-- two spaces)
+#### [Code](./codes/Spaceship.ino)
+  ![](./pics/hw2.jpg)
+  ![](./pics/hw2.gif)<br/>
+
+## HW3: Userflow 
   ![](./pics/userflow.png)
 ## HW4: Love-O-Meter and Color Mixing Lamp
   * Love-O-Meter
+#### [Code](./codes/Love-o-Meter.ino)
   ![](./pics/hw4-1.jpg)
-  ![](./pics/hw4-1.gif)(<-- two spaces)
-  [Code](./codes/Love-o-Meter.ino)<br/>
+  ![](./pics/hw4-1.gif)  <br/>
   * Color Mixing Lamp
+#### [Code](./codes/color-mixing-lamp.ino)
   ![](./pics/hw4-2.jpg)
-  ![](./pics/hw4-2.gif)(<-- two spaces)
-  [Code](./codes/color-mixing-lamp.ino)<br/>
+  ![](./pics/hw4-2.gif) <br/>
 ## HW5: Knock Lock and Sensor Walk
   * Knock Lock
+#### [Code](./codes/Knock-lock.ino)
   ![](./pics/hw5-1.jpg)
-  ![](./pics/hw5-2.gif)(<-- two spaces)
-  [Code](./codes/Knock-lock.ino)<br/>
+  ![](./pics/hw5-2.gif)<br/>
   * Sensor Walk
     * Bottle Filling Station
     * Automatic Soap Dispenser
