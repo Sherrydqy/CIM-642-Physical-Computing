@@ -1,7 +1,8 @@
 ## HW1: Interface of a Magic Machine
-  ![](./pics/hw1.3.jpg)
-  ![](./pics/hw1.2.jpg)
-  ![](./pics/hw1.1.jpg) <br/>
+<img src="./pics/hw1.3.jpg" width="550px"/><br/>
+<img src="./pics/hw1.2.jpg" width="550px"/><br/>
+<img src="./pics/hw1.1.jpg" width="550px"/><br/>
+
 ## HW2: Spaceship Interface
 #### [Code](./codes/Spaceship.ino)
   ![](./pics/hw2.jpg)
@@ -25,7 +26,7 @@
   ![](./pics/hw5-2.gif)<br/><br/>
   * Sensor Walk
     * Bottle Filling Station
-    <img src="./pics/sensor-water.jpg" width="450px"/>
+    <img src="./pics/sensor-water.jpg" width="450px"/><br/>
     * Automatic Soap Dispenser
     * Automatic Paper Towel Dispenser
     * Escalator
