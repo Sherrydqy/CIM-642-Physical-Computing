@@ -25,7 +25,7 @@
   ![](./pics/hw5-2.gif)<br/><br/>
   * Sensor Walk
     * Bottle Filling Station
-    ![](./pics/sensor-water.jpg = 410*410)
+    <img src="./pics/sensor-water.jpg" width="450px"/>
     * Automatic Soap Dispenser
     * Automatic Paper Towel Dispenser
     * Escalator
