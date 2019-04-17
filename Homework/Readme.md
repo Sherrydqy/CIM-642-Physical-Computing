@@ -26,20 +26,31 @@
   <img src="./pics/hw5-1.gif" width="550px"/><br/><br/>
   * Sensor Walk
     * Bottle Filling Station <br/>
-    > <img src="./pics/sensor-water.jpg" width="450px"/><br/>
-    > Active Input
-    > Sensor: Proximity sensor
-    > Output: Water
-    > Its output is active. Water will come out when triggered.
+    > <img src="./pics/sensor-water.jpg" width="250px"/>
+    > Active Input <br/>
+    > Sensor: Proximity sensor <br/>
+    > Output: Water <br/>
+    > Its output is active. Water will come out when triggered. <br/> <br/>
 
 
     * Voice-Activated Street Lamp<br/>
-    <img src="./pics/sensor-light.jpg" width="450px"/><br/>
+    > <img src="./pics/sensor-light.jpg" width="250px"/>
+    > <div width = "200">Active Input <br/>
+    > Sensor: Sound sensor <br/>
+    > Output: Light <br/>
+    > Its output is active. The light will turn on when triggered. <br/> <br/>
+    </div>
+
     * Automatic Paper Towel Dispenser<br/>
-    <img src="./pics/sensor-paper.jpg" width="450px"/><br/>
+    > <img src="./pics/sensor-paper.jpg" width="250px"/>
+    > Active Input <br/>
+    > Sensor: Sound sensor <br/>
+    > Output: Light <br/>
+    > Its output is active. The light will turn on when triggered. <br/> <br/>
+
     * Escalator<br/>
-    <img src="./pics/sensor-esca.jpg" width="450px"/><br/>
+    <img src="./pics/sensor-esca.jpg" width="250px"/>
     * Lift (weight limit)<br/>
-    <img src="./pics/sensor-lift.jpg" width="450px"/><br/>
+    <img src="./pics/sensor-lift.jpg" width="250px"/>
     * Street Crossing Button<br/>
-    <img src="./pics/sensor-btn.jpg" width="450px"/><br/>
+    <img src="./pics/sensor-btn.jpg" width="250px"/>
