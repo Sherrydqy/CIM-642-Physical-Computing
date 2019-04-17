@@ -26,11 +26,16 @@
   <img src="./pics/hw5-1.gif" width="550px"/><br/><br/>
   * Sensor Walk
     * Bottle Filling Station <br/>
-    > <img src="./pics/sensor-water.jpg" width="250px"/>
-    > Active Input <br/>
+     <div> <img src="./pics/sensor-water.jpg" width="250px"/></div>
+    <div width = "50">
+    </div>
+     <div width = "200">
+     > Active Input <br/>
     > Sensor: Proximity sensor <br/>
     > Output: Water <br/>
     > Its output is active. Water will come out when triggered. <br/> <br/>
+
+    </div>
 
 
     * Voice-Activated Street Lamp<br/>
