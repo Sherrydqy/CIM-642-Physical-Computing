@@ -55,7 +55,6 @@
 
     * Escalator<br/>
     > <img src="./pics/sensor-esca.jpg" width="250px"/>
-    > <img src="./pics/sensor-paper.jpg" width="250px"/>
     > <div width = "200">
     > Active Input <br/>
     > Sensor: Sound sensor <br/>
@@ -65,7 +64,6 @@
 
     * Lift (weight limit)<br/>
     > <img src="./pics/sensor-lift.jpg" width="250px"/>
-    > <img src="./pics/sensor-paper.jpg" width="250px"/>
     > <div width = "200">
     > Active Input <br/>
     > Sensor: Sound sensor <br/>
@@ -75,7 +73,6 @@
 
     * Street Crossing Button<br/>
     > <img src="./pics/sensor-btn.jpg" width="250px"/>
-    > <img src="./pics/sensor-paper.jpg" width="250px"/>
     > <div width = "200">
     > Active Input <br/>
     > Sensor: Sound sensor <br/>
