@@ -29,6 +29,8 @@
     > <img src="./pics/sensor-water.jpg" width="450px"/><br/>
     > Active Input
     > Sensor: Proximity sensor
+    > Output: Water
+    > Its output is active. Water will come out when triggered.
 
 
     * Voice-Activated Street Lamp<br/>
