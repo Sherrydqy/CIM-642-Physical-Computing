@@ -14,7 +14,7 @@ const byte SERVO_PIN      = 9;  // the pin servo motor connected to
 const unsigned short BAUD_RATE = 9600;
 const byte QUIET_KNOCK_VAL     = 30;
 const byte LOUD_KNOCK_VAL      = 50;
-const byte MAX_NUM_KNOCK       = 5;
+const byte MAX_NUM_KNOCK       = 3;
  
 // Global variables
 byte switch_val;
@@ -41,6 +41,7 @@ void loop() {
  
         if (switch_val == HIGH) {
             LockTheBox();
+            delay(1000);
         }
     } else {
         knock_val = analogRead(PIEZO_PIN);
@@ -49,6 +50,7 @@ void loop() {
         if ((num_knocks < MAX_NUM_KNOCK) && (knock_val > 0)) {
             if (CheckForKnock(knock_val) == true) {
                 num_knocks++;
+                delay(1000);
             }
             Serial.print("Need ");
             Serial.print(MAX_NUM_KNOCK - num_knocks);

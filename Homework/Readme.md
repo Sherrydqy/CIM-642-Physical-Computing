@@ -23,12 +23,21 @@
   * Knock Lock
 #### [Code](./codes/Knock-lock.ino)
   <img src="./pics/hw5-1.jpg" width="550px"/><br/>
-  <img src="./pics/hw5-2.gif" width="550px"/><br/><br/>
+  <img src="./pics/hw5-1.gif" width="550px"/><br/><br/>
   * Sensor Walk
-    * Bottle Filling Station
-    <img src="./pics/sensor-water.jpg" width="450px"/><br/>
-    * Automatic Soap Dispenser
-    * Automatic Paper Towel Dispenser
-    * Escalator
-    * Lift (weight limit)
-    * Street Crossing Button
+    * Bottle Filling Station <br/>
+    > <img src="./pics/sensor-water.jpg" width="450px"/><br/>
+    > Active Input
+    > Sensor: Proximity sensor
+
+
+    * Voice-Activated Street Lamp<br/>
+    <img src="./pics/sensor-light.jpg" width="450px"/><br/>
+    * Automatic Paper Towel Dispenser<br/>
+    <img src="./pics/sensor-paper.jpg" width="450px"/><br/>
+    * Escalator<br/>
+    <img src="./pics/sensor-esca.jpg" width="450px"/><br/>
+    * Lift (weight limit)<br/>
+    <img src="./pics/sensor-lift.jpg" width="450px"/><br/>
+    * Street Crossing Button<br/>
+    <img src="./pics/sensor-btn.jpg" width="450px"/><br/>
