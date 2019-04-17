@@ -26,21 +26,19 @@
   <img src="./pics/hw5-1.gif" width="550px"/><br/><br/>
   * Sensor Walk
     * Bottle Filling Station <br/>
-     <div> <img src="./pics/sensor-water.jpg" width="250px"/></div>
-    <div width = "50">
-    </div>
-     <div width = "200">
+     > <img src="./pics/sensor-water.jpg" width="250px"/></div>
+     > <div width = "200">
      > Active Input <br/>
     > Sensor: Proximity sensor <br/>
     > Output: Water <br/>
     > Its output is active. Water will come out when triggered. <br/> <br/>
-
     </div>
 
 
     * Voice-Activated Street Lamp<br/>
     > <img src="./pics/sensor-light.jpg" width="250px"/>
-    > <div width = "200">Active Input <br/>
+    > <div width = "200">
+    Active Input <br/>
     > Sensor: Sound sensor <br/>
     > Output: Light <br/>
     > Its output is active. The light will turn on when triggered. <br/> <br/>
@@ -48,14 +46,39 @@
 
     * Automatic Paper Towel Dispenser<br/>
     > <img src="./pics/sensor-paper.jpg" width="250px"/>
+    > <div width = "200">
     > Active Input <br/>
     > Sensor: Sound sensor <br/>
     > Output: Light <br/>
     > Its output is active. The light will turn on when triggered. <br/> <br/>
+    </div>
 
     * Escalator<br/>
     <img src="./pics/sensor-esca.jpg" width="250px"/>
+    > <img src="./pics/sensor-paper.jpg" width="250px"/>
+    > <div width = "200">
+    > Active Input <br/>
+    > Sensor: Sound sensor <br/>
+    > Output: Light <br/>
+    > Its output is active. The light will turn on when triggered. <br/> <br/>
+    </div>
+
     * Lift (weight limit)<br/>
     <img src="./pics/sensor-lift.jpg" width="250px"/>
+    > <img src="./pics/sensor-paper.jpg" width="250px"/>
+    > <div width = "200">
+    > Active Input <br/>
+    > Sensor: Sound sensor <br/>
+    > Output: Light <br/>
+    > Its output is active. The light will turn on when triggered. <br/> <br/>
+    </div>
+
     * Street Crossing Button<br/>
     <img src="./pics/sensor-btn.jpg" width="250px"/>
+    > <img src="./pics/sensor-paper.jpg" width="250px"/>
+    > <div width = "200">
+    > Active Input <br/>
+    > Sensor: Sound sensor <br/>
+    > Output: Light <br/>
+    > Its output is active. The light will turn on when triggered. <br/> <br/>
+    </div>
