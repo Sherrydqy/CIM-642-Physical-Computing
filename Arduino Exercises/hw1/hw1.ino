@@ -3,12 +3,12 @@
 Servo ServoMotor;
  
 // Required hardware I/O connections
-const byte PIEZO_PIN      = A0; // the pin piezo buzzer connected to
-const byte SWITCH_PIN     = 2;  // the pin switch connected to
-const byte YELLOW_LED_PIN = 3;  // the pin yellow LED connected to
-const byte GREEN_LED_PIN  = 4;  // the pin green LED connnected to
-const byte RED_LED_PIN    = 5;  // the pin red LED connected to
-const byte SERVO_PIN      = 9;  // the pin servo motor connected to
+const byte PIEZO_PIN      = A0; 
+const byte SWITCH_PIN     = 2;  
+const byte YELLOW_LED_PIN = 3;  
+const byte GREEN_LED_PIN  = 4;  
+const byte RED_LED_PIN    = 5; 
+const byte SERVO_PIN      = 9;  
  
 // Global constants
 const unsigned short BAUD_RATE = 9600;
@@ -64,10 +64,7 @@ void loop() {
         }
     }
 }
- 
-/**
- * Changes the LEDs and turn the servo to unlock the box.
- */
+
 void UnLockTheBox(void) {
     // change the is_locked value
     is_locked = false;
@@ -82,9 +79,7 @@ void UnLockTheBox(void) {
     delay(20);
 }
  
-/**
- * Changes the LEDs and turn the servo to lock the box.
- */
+
 void LockTheBox(void) {
     // change is_locked value
     is_locked = true;
@@ -98,14 +93,7 @@ void LockTheBox(void) {
     // allow time for the servo to completely move
     delay(20);
 }
- 
-/**
- * Checks to see if a knock is valid or not.
- *
- * @param   a_knock_val   the loudness of the knock
- *
- * @return                true if a valid knock, false otherwise
- */
+
 boolean CheckForKnock(byte a_knock_val) {
     if ((a_knock_val > QUIET_KNOCK_VAL) && (a_knock_val < LOUD_KNOCK_VAL)) {
         digitalWrite(YELLOW_LED_PIN, HIGH);
