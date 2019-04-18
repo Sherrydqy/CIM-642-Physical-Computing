@@ -80,5 +80,4 @@
     > Its output is active. It will make a voice warning saying 'Wait!' when the button is pushed. <br/> <br/>
     </div>
 
-## Midterm
-### [Midterm Folder] (../Midterm)
+## [Midterm](../Midterm Project)
