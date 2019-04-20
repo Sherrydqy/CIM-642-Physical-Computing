@@ -21,27 +21,27 @@ Anyone who has a busy schedule and often forgets to drink water to keep hydrated
   * If the user puts back the container after drinking enough amount of water, everything will start over. All the flag variables will be reset to initial value. And the timer will start over.
 
 ## **Reflection**
-    ## What worked/did not work?
+## What worked/did not work?
     * What worked: the LED lights. The FSR can measure the force, in some way.
     * What didn't work:  The FSR cannot reach a stable value. The input keeps increasing when something remains still on the shelf. And even if the exactly same thing is put on the shelf, the measurement can be different.
 
-    ## If you had more time what would you change in your project?
+## If you had more time what would you change in your project?
     * Fix the measurement issue. So that I can calculate the amount of water a user just took.
     * Reduce measurement time.
     * Make richer output like sound, vibration, etc.
 
 ## **Components**
-  ## What parts did you use?
-    ### PARTS FOR INPUT
+## What parts did you use?
+### PARTS FOR INPUT
       * One force sensitive Sensor
         I needed an input that can respond to the change of the container's weight.
-    ### PARTS FOR OUTPUT
+### PARTS FOR OUTPUT
     * One blue LED light
     * One red LED light
     I needed something that has different attributes to indicate different state of the machine and also communicate a variety of messages to users.
 
-  ## Which are your inputs/outputs
-    ### INPUT
+## Which are your inputs/outputs
+### INPUT
     The input is the weight of the container that users put on, including the water in it.
     * Users put a container with water on the container shelf to trigger the machine.
     * Once something is put on it, Water Time will start to measure its weight. It takes a few seconds for the machine to get a stable measurement and then it starts timing.
@@ -58,13 +58,14 @@ Anyone who has a busy schedule and often forgets to drink water to keep hydrated
 
 ## **Interaction**
 ## Explain how a user interacts with your input/output**
-  ## Create a layout for your interface
-  ## Storyboard the interaction
-    ## Draw a step by step diagram of the interaction
-    ## Explain how the project is used?
-      ## How does the user interact with the input
-      ## Why did you decide to use that component?
-      ## Explain how the input translates to the output
+## Create a layout for your interface
+## Storyboard the interaction
+## Draw a step by step diagram of the interaction
+![](./pics/watertime-workflow.png)
+## Explain how the project is used?
+## How does the user interact with the input
+## Why did you decide to use that component?
+## Explain how the input translates to the output
 
 ## Talk about what form factor/size your project would ideally be.
 This project would ideally be a book-size.
