@@ -2,21 +2,17 @@
  
 Servo ServoMotor;
  
-// Required hardware I/O connections
 const byte PIEZO_PIN      = A0; 
 const byte SWITCH_PIN     = 2;  
 const byte YELLOW_LED_PIN = 3;  
 const byte GREEN_LED_PIN  = 4;  
 const byte RED_LED_PIN    = 5; 
 const byte SERVO_PIN      = 9;  
- 
-// Global constants
 const unsigned short BAUD_RATE = 9600;
 const byte QUIET_KNOCK_VAL     = 30;
 const byte LOUD_KNOCK_VAL      = 50;
 const byte MAX_NUM_KNOCK       = 3;
  
-// Global variables
 byte switch_val;
 byte knock_val;
 boolean is_locked  = false;
@@ -66,31 +62,21 @@ void loop() {
 }
 
 void UnLockTheBox(void) {
-    // change the is_locked value
     is_locked = false;
-    // indicate on LEDs
     digitalWrite(RED_LED_PIN,   LOW);
     digitalWrite(GREEN_LED_PIN, HIGH);
-    // rotate the servo to 0 degree
     ServoMotor.write(0);
-    // print a message on the Serial Monitor
     Serial.println("ACCESS GRANTED");
-    // allow time for the servo to completely move
     delay(20);
 }
  
 
 void LockTheBox(void) {
-    // change is_locked value
     is_locked = true;
-    // indicate on LEDs
     digitalWrite(GREEN_LED_PIN, LOW);
     digitalWrite(RED_LED_PIN,   HIGH);
-    // rotate the servo to 90 degrees
-    ServoMotor.write(90); // rotate the servo 90 degrees to lock
-    // print a message on the Serial Monitor
+    ServoMotor.write(90); 
     Serial.println("ACCESS DENIED");
-    // allow time for the servo to completely move
     delay(20);
 }
 
