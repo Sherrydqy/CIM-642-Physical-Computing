@@ -1,6 +1,6 @@
-# WATER TIME
+# HYDRATE YOURSELF WELL
 ## What is the title of your project?
-Water Time
+HYDRATE YOURSELF WELL
 ## Briefly explain why did you want to make this project?
 Study has shown that across the world, at all stages of life, most people live in a status of dehydration. The average American only drinks 1.8 cups a day which is significantly less than the 8.5 cups a day that are recommended by the European Hydration Institute. It takes only a 2% loss of total water content for your body to start feeling thirsty. Once you’re at this point your body is already in a state of dehydration. The most recommended way to keep ourselves hydrated is regular water intake. Therefore, I want to make a machine that can reminds people to drink water regularly.
 
@@ -48,8 +48,8 @@ The input is the weight of the container that users put on, including the water 
 * Once users finish drinking water and put the container back on the shelf, Water Time will start to measure its weight again.
 ### OUTPUT
 The output are two lights. The color, the frequency of lights.
-* When Water Time is measuring the weight of container put on it, both the red light and the blue light will go on.
-* Once the measurement becomes stable and Water Time starts to time, only the blue light remains on while the red one goes off.
+* When the machine is measuring the weight of container put on it, both the red light and the blue light will go on.
+* Once the measurement becomes stable and the machine starts to time, only the blue light remains on while the red one goes off.
 * As long as the container is moved off the shelf, the blue light starts blinking slowly, indicating users are drinking water.
 * If the container haven't been moved for a certain period of time, which means users haven't drunk water for a long time, the red light will start blinking to remind users it's time to drink water. The blue light will goes off at this moment.
 * If users only take a sip and put the container down on the shelf, the red light will stay on to suggest users to drink more.
@@ -75,4 +75,4 @@ This project would ideally be a book-size.
 ## Finished Breadboard
 ![](./breadboard.jpg)
 ## Video
-[WATER TIME!](https://youtu.be/0R5WKP5XWsA)
+[HYDRATE YOURSELF WELL!](https://youtu.be/0R5WKP5XWsA)
