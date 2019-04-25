@@ -6,8 +6,7 @@ Study has shown that across the world, at all stages of life, most people live i
 
 ## Who are the stakeholders?
 Anyone who has a busy schedule and often forgets to drink water to keep hydrated. For example: students, teachers, office workers.
-## Find 3 inspiring projects
-![](./pics/Inspiration.png)
+
 ## **Code**
 [Codes are here](./WaterTime.ino)
 ## How does your program work? (Explain your code)
@@ -57,15 +56,10 @@ The output are two lights. The color, the frequency of lights.
 * Once users drink enough water, everything will become normal again. The timer will start over.
 
 ## **Interaction**
-## Explain how a user interacts with your input/output**
-## Create a layout for your interface
-## Storyboard the interaction
+
 ## Draw a step by step diagram of the interaction
 ![](./pics/watertime-workflow.png)
-## Explain how the project is used?
-## How does the user interact with the input
-## Why did you decide to use that component?
-## Explain how the input translates to the output
+
 
 ## Talk about what form factor/size your project would ideally be.
 This project would ideally be a book-size.
