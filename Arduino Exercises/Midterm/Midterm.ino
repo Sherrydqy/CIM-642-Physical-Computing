@@ -108,6 +108,7 @@ void loop()
       flagTimingState = 3;
      }
      
+     
     }
 
     if(fsrADC > VOL_DIV && flagCup != 0){

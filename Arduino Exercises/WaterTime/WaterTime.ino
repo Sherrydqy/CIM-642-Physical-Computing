@@ -1,45 +1,33 @@
 
 #include "U8glib.h"   // Library for Oled display https://github.com/olikraus/u8glib/
 #include "HX711.h"    // Library for Load Cell amplifier board
+#include <math.h>
 
-volatile boolean TurnDetected;  // variable used to detect rotation of Rotary encoder
-volatile int Rotary_Flag=0;     // flag to indicate rotation as occured
 
-// Rotary Encoder Module connections
-#define RotaryCLK 2   // Rotary encoder CLK pin connected to pin 2 of Arduino
-#define RotaryDT 3    // Rotary encoder DT pin connected to pin 3
-#define RotarySW 4    // Rotary encoder Switch pin connected to pin 4
-
-// HX711 Module connections
 #define CLK 5   // CLK of HX711 connected to pin 5 of Arduino
 #define DOUT 6  // DOUT of HX711 connected to pin 6 of Arduino
+#define RESETBTN 4
+#define standard = 6;
+#define drinkStandard = 40;
+
 
 int reset_screen_counter=0;      // Variable used to decide what to display on Oled
-volatile int current_units=0;    // Used to select which measuring unit to use (KG,Grams,Pounds)
 float unit_conversion;           // Used to convert between measuring units
 int decimal_place;               // how many decimal number to display
-
+int weight=0;
+float curWeight=0;
+int prevWeighz;
+int flag_clean = 0;
+int stable = 0;
+int machineOn, flagFinalWeight, flagTimingState,flagCup, flagAlert, flagBlink;
+int weightRead,lastWeight,curRead,preRead; 
+float startTime, blinkTime, blinkPreTime, blinkInterval, pastInterval;
+float drinkInterval = 10000; 
 HX711 scale;  // Init of the HX711
-
 U8GLIB_SSD1306_128X32 u8g(U8G_I2C_OPT_FAST);  // Init of the OLED
 
 
-// Interrupt routine runs if Rotation detected from Rotary encoder
-void rotarydetect ()  {
-Rotary_Flag=1; // Set Rotary flag from 0 to 1
-delay(500);
-}
 
-
-// Used to change the measurement units (0=grams, 1=KG, 2=pounds)
-void change_units ()  { 
-  if (current_units == 0) current_units=1;
-  else if (current_units == 1) current_units=2;
-  else if (current_units == 2) current_units=0;
-}
-
-
-// Run at Startup and when Resetting with Rotary encoder switch
 void startupscreen(void) {
   u8g.setFont(u8g_font_unifont);
   u8g.firstPage(); 
@@ -52,10 +40,46 @@ void startupscreen(void) {
 // Reset Scale to zero
 void tare_scale(void) {
   scale.begin(DOUT, CLK);
-  scale.set_scale(-1073000);  //Calibration Factor obtained from calibration sketch
+  scale.set_scale(-109600);  //Calibration Factor obtained from calibration sketch 
   scale.tare();             //Reset the scale to 0  
+ // flag_clean= 1;
 }
 
+/*int stable_measurement(void){
+  preWeight = 
+  curWeight = scale.get_units(3)unit_conversion;
+  prevWeight = curWeight;
+ 
+  curWeight = 
+   Serial.print("fsrRead: ");
+   Serial.print(fsrADC);
+   Serial.println();
+   Serial.print("计时: ");
+   Serial.println(String(flagTimingState));
+   Serial.print("STABLE: ");
+      Serial.println(String(stable));
+  // If the FSR has no pressure, the resistance will be
+  // near infinite. So the voltage should be near 0.
+  if (weight > 40 && stable != standard) // If the analog reading is non-zero
+  {
+     //analogWrite(BLUE_PIN, HIGH);
+     //analogWrite(RED_PIN, HIGH);
+    //blinkTime = 0;
+    //flagBlink = 0;
+  
+   if(flagCup == 0 || flagCup == 3){
+    flagCup = 1;
+   }
+  
+    
+    if (fabs(curRead - preRead) < 4 ){
+      stable++; 
+    }
+    else{
+      stable = 0;
+    }
+  }
+}*/
 
 // Start Displaying information on OLED
 void start_scale(void) {
@@ -64,25 +88,18 @@ void start_scale(void) {
   String GRAMS="GRAMS";
   String LBS="POUNDS";
   
-  if (current_units == 0) {                     // 0 = grams
+                  // 0 = grams
     GRAMS.toCharArray(temp_current_units, 15);  // Convert String to Char for OLED display
     unit_conversion=1000;                        // conversion value for grams
     decimal_place=0;                            // how many decimal place numbers to display
-  } else if (current_units == 1) {              // 1 = Kilograms
-    KG.toCharArray(temp_current_units, 15);
-    unit_conversion=1;
-    decimal_place=3;
-  } else {                                      // else 2 = Pounds
-    LBS.toCharArray(temp_current_units, 15);
-    unit_conversion=2.2046226218;
-    decimal_place=3;
-  }
   
     u8g.setFont(u8g_font_unifont);
     u8g.firstPage(); 
       do {
         u8g.drawStr( 0, 10, temp_current_units);  // Display the current measurement unit
         u8g.setPrintPos(38, 28);
+        Serial.print("重量：");
+        Serial.println(scale.get_units(3)*unit_conversion);
         u8g.print(scale.get_units(3)*unit_conversion, decimal_place);  // Display the average of 3 scale value reading
       } while( u8g.nextPage() );
 }
@@ -91,14 +108,7 @@ void start_scale(void) {
 
 void setup(void) {
   
-  // Set pinmode for Rotary encoder pins
-  pinMode(RotarySW,INPUT_PULLUP);
-  pinMode(RotaryCLK,INPUT_PULLUP);
-  pinMode(RotaryDT,INPUT_PULLUP);  
-
-  // Attach interrupt 0 (Pin 2 on UNO) to the Rotary Encoder
-  attachInterrupt (0,rotarydetect,RISING);   // interrupt 0 always connected to pin 2 on Arduino UNO
-
+  Serial.begin(9600);
   // Rotate screen 180 degrees on OLED, if required
   u8g.setRot180();
 
@@ -125,9 +135,12 @@ void setup(void) {
 
 
 void loop(void) {
+  Serial.print("按钮：");
+  Serial.println(digitalRead(RESETBTN));
   
+  //Serial.println(scale.get_units(3)*unit_conversion);
 // If Switch is pressed on Rotary Encoder
-  if (!digitalRead(RotarySW)) {       // Check to see which action to take
+  if (digitalRead(RESETBTN)) {       // Check to see which action to take
     if(reset_screen_counter == 1) {   
       tare_scale();                   // 1 = zero and start scale
       reset_screen_counter=2;
@@ -138,12 +151,6 @@ void loop(void) {
         delay(500); 
       }
     }
-  }
-
-// If Rotation was detected
-  if (Rotary_Flag == 1) {
-    change_units();  // change the measuring units
-    Rotary_Flag=0;   // reset flag to zero
   }
 
 // If system was just started display intro screen  
