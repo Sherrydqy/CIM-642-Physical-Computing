@@ -1,10 +1,10 @@
 * Knock Lock
-#### [Code](./codes/Knock-lock.ino)
-<img src="./pics/hw5-1.jpg" width="550px"/><br/>
-<img src="./pics/hw5-1.gif" width="550px"/><br/><br/>
+#### [Code](../Homework/codes/Knock-lock.ino)
+<img src="../Homework/pics/hw5-1.jpg" width="550px"/><br/>
+<img src="../Homework/pics/hw5-1.gif" width="550px"/><br/><br/>
 * Sensor Walk
   * Bottle Filling Station <br/>
-   > <img src="./pics/sensor-water.jpg" width="250px"/>
+   > <img src="../Homework/pics/sensor-water.jpg" width="250px"/>
    > <div width = "200">
    > Active Input <br/>
   > Sensor: Proximity sensor <br/>
@@ -14,7 +14,7 @@
 
 
   * Voice-Activated Street Lamp<br/>
-  > <img src="./pics/sensor-light.jpg" width="250px"/>
+  > <img src="../Homework/pics/sensor-light.jpg" width="250px"/>
   > <div width = "200">
   > Active Input <br/>
   > Sensor: Sound sensor <br/>
@@ -23,7 +23,7 @@
   </div>
 
   * Automatic Towel Paper Dispenser<br/>
-  > <img src="./pics/sensor-paper.jpg" width="250px"/>
+  > <img src="../Homework/pics/sensor-paper.jpg" width="250px"/>
   > <div width = "200">
   > Active Input <br/>
   > Sensor: passive Infrared Sensor <br/>
@@ -32,7 +32,7 @@
   </div>
 
   * Escalator<br/>
-  > <img src="./pics/sensor-esca.jpg" width="250px"/>
+  > <img src="../Homework/pics/sensor-esca.jpg" width="250px"/>
   > <div width = "200">
   > Active Input <br/>
   > Sensor: Weight sensor <br/>
@@ -41,7 +41,7 @@
   </div>
 
   * Lift (weight limit)<br/>
-  > <img src="./pics/sensor-lift.jpg" width="250px"/>
+  > <img src="../Homework/pics/sensor-lift.jpg" width="250px"/>
   > <div width = "200">
   > Active Input <br/>
   > Sensor: Weight sensor <br/>
@@ -50,7 +50,7 @@
   </div>
 
   * Street Crossing Button<br/>
-  > <img src="./pics/sensor-btn.jpg" width="250px"/>
+  > <img src="../Homework/pics/sensor-btn.jpg" width="250px"/>
   > <div width = "200">
   > Passive Input <br/>
   > Sensor: Button <br/>
