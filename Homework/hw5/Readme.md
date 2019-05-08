@@ -26,7 +26,7 @@
   > <img src="./pics/sensor-paper.jpg" width="250px"/>
   > <div width = "200">
   > Active Input <br/>
-  > Sensor: Motion sensor <br/>
+  > Sensor: passive Infrared Sensor <br/>
   > Output: Paper <br/>
   > Its output is active. Paper will come out when triggered. <br/> <br/>
   </div>
