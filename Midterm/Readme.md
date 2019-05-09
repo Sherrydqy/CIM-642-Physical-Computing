@@ -42,7 +42,7 @@ Anyone who has a busy schedule and often forgets to drink water to keep hydrated
 
 ## Which are your inputs/outputs
 ### INPUT
-The input is the weight of the container that users put on, including the water in it.
+The input is the weight of the container that users put on (converted from the force applied to the base), including the water in it.
 * Users put a container with water on the container shelf to trigger the machine.
 * Once something is put on it, Water Time will start to measure its weight. It takes a few seconds for the machine to get a stable measurement and then it starts timing.
 * If users lift up the container, the weight will become 0 and Water Machine will know that the container has been moved off the shelf.
@@ -62,6 +62,20 @@ The output are two lights. The color, the frequency of lights.
 ## Draw a step by step diagram of the interaction
 <img src="./watertime-workflow.png" width="550px"/><br/>
 ## Explain how the project is used
+Users put a glass of water on the base and the machine will start scaling its weight and save it. If users haven't drunk for a given period of time, the machine will start giving alarms (the red light will start blinking). If the user doesn't drink enough water and put the cup back to the base, the machine will give an alarm again (the red light will remain on). If the user drinks enough water and put the cup back, the red light will go off while the blue one will turn on again. While the user is drinking water, the blue led will blink slowly indicating the cup is being lifted off the base.
+## How does the user interact with the input
+Users only need to put a glass of water on the base which has a sensor at the bottom. The machine will read the force applied to it and convert it to the weight of the glass of water to see whether the user has drunk it or not.
+## Why did you decide to use that component?
+Because I need a sensor to measure the weight of what is put on the base.
+
+##Explain how the input translates to the output?
+The change of weight of the cup of water will indicate different status. The change of light will respond to different status.
+* When the force is applied to the sensor - both the red light and the blue light will go on.
+* Once the measurement becomes stable and the machine starts to time - only the blue light remains on while the red one goes off.
+* When no force is applied to the base - the blue light starts blinking slowly, indicating users are drinking water.
+* If the force hasn't changed after a given period of time - the red light will start blinking to remind users it's time to drink water. The blue light will goes off at this moment.
+* If the force applied to the base doesn't change much from the previous force - the red light will stay on to suggest users to drink more.
+* If the force applied to the base changes a lot from the previous force - only the blue light remains on while the red one goes off.
 
 ## Talk about what form factor/size your project would ideally be.
 This project would ideally be a book-size.
