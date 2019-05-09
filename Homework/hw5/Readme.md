@@ -29,7 +29,7 @@
   > Sensor: passive Infrared Sensor <br/>
   > Output: Paper <br/>
   > Its output is active. Paper will come out when triggered. <br/> <br/>
-  </div>
+
 
   * Escalator<br/>
   > <img src="../pics/sensor-esca.jpg" width="250px"/>
