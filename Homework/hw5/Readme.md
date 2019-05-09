@@ -56,3 +56,8 @@
   > Sensor: Button <br/>
   > Output: Sound <br/>
   > Its output is active. It will make a voice warning saying 'Wait!' when the button is pushed. <br/> <br/>
+
+* Potential Matches
+  * [Proximity Sensor](https://www.amazon.com/IronBuddy-HC-SR04P-Ultrasonic-Measuring-Transducer/dp/B07Q7NDB68/ref=sr_1_7?keywords=proximity+sensor&qid=1557369769&s=gateway&sr=8-7)
+  * [Weight Sensor - Load Cell](https://learn.sparkfun.com/tutorials/getting-started-with-load-cells)
+  * [Sound Sensor - Sound Detector](https://learn.sparkfun.com/tutorials/sound-detector-hookup-guide?_ga=2.4540467.1044965918.1557369897-349644450.1550779801)
