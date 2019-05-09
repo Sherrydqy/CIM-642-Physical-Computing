@@ -1,9 +1,9 @@
 ## HW4: Love-O-Meter and Color Mixing Lamp
   * Love-O-Meter
-#### [Code](../Homework/codes/Love-o-Meter.ino)
-  <img src="../Homework/pics/hw4-1.jpg" width="550px"/><br/>
-  <img src="../Homework/pics/hw4-1.gif" width="550px"/><br/><br/>
+#### [Code](../codes/Love-o-Meter.ino)
+  <img src="../pics/hw4-1.jpg" width="550px"/><br/>
+  <img src="../pics/hw4-1.gif" width="550px"/><br/><br/>
   * Color Mixing Lamp
-#### [Code](../Homework/codes/color-mixing-lamp.ino)
-  <img src="../Homework/pics/hw4-2.jpg" width="550px"/><br/>
-  <img src="../Homework/pics/hw4-2.gif" width="550px"/><br/> <br/>
+#### [Code](../codes/color-mixing-lamp.ino)
+  <img src="../pics/hw4-2.jpg" width="550px"/><br/>
+  <img src="../pics/hw4-2.gif" width="550px"/><br/> <br/>
