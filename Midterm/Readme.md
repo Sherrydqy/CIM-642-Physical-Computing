@@ -1,12 +1,13 @@
-# HYDRATE YOURSELF WELL
+# Water Time
 ## What is the title of your project?
-HYDRATE YOURSELF WELL
+WATER TIME
 ## Briefly explain why did you want to make this project?
 Study has shown that across the world, at all stages of life, most people live in a status of dehydration. The average American only drinks 1.8 cups a day which is significantly less than the 8.5 cups a day that are recommended by the European Hydration Institute. It takes only a 2% loss of total water content for your body to start feeling thirsty. Once you’re at this point your body is already in a state of dehydration. The most recommended way to keep ourselves hydrated is regular water intake. Therefore, I want to make a machine that can reminds people to drink water regularly.
 
 ## Who are the stakeholders?
 Anyone who has a busy schedule and often forgets to drink water to keep hydrated. For example: students, teachers, office workers.
-
+## Find 3 Inspiring Projects
+<img src="./Inspiring.png" width="700px"/><br/>
 ## **Code**
 [Codes are here](./WaterTime.ino)
 ## How does your program work? (Explain your code)
@@ -56,23 +57,24 @@ The output are two lights. The color, the frequency of lights.
 * Once users drink enough water, everything will become normal again. The timer will start over.
 
 ## **Interaction**
-
+## Create a layout for your interface
+<img src="./layout.jpg" width="550px"/><br/>
 ## Draw a step by step diagram of the interaction
-![](./pics/watertime-workflow.png)
-
+<img src="./watertime-workflow.png" width="550px"/><br/>
+## Explain how the project is used
 
 ## Talk about what form factor/size your project would ideally be.
 This project would ideally be a book-size.
 
 ## **Images and Videos**
 ## Progress images
-![](./progress1.jpg)
-![](./progress2.jpg)
+<img src="./progress1.jpg" width="550px"/><br/>
+<img src="./progress2.jpg" width="550px"/><br/>
 ## Finished input
-![](./input.jpg)
+<img src="./input.jpg" width="550px"/><br/>
 ## Finished output
-![](./output.jpg)
+<img src="./output.jpg" width="550px"/><br/>
 ## Finished Breadboard
-![](./breadboard.jpg)
+<img src="./breadboard.jpg" width="550px"/><br/>
 ## Video
-[HYDRATE YOURSELF WELL!](https://youtu.be/0R5WKP5XWsA)
+[Water Time!](https://youtu.be/0R5WKP5XWsA)
