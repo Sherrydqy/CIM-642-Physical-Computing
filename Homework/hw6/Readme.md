@@ -1,4 +1,4 @@
-* 3D Printed Objects
+# 3D Printed Objects
 #### Dimension Worksheet
 <img src="../pics/hw7-1.jpg" width="550px"/><br/>
 #### Knob 3D Printing Sketch
