@@ -68,7 +68,7 @@ Users only need to put a glass of water on the base which has a sensor at the bo
 ## Why did you decide to use that component?
 Because I need a sensor to measure the weight of what is put on the base.
 
-##Explain how the input translates to the output?
+## Explain how the input translates to the output?
 The change of weight of the cup of water will indicate different status. The change of light will respond to different status.
 * When the force is applied to the sensor - both the red light and the blue light will go on.
 * Once the measurement becomes stable and the machine starts to time - only the blue light remains on while the red one goes off.
